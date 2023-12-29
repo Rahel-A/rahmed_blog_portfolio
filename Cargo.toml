@@ -5,6 +5,8 @@ authors = ["Rahel Ahmed <rahel@tuta.io>"]
 edition = "2021"
 rust-version = "1.72"
 
+[build-dependencies]
+build-info-build = "0.0.34"
 
 [dependencies]
 egui = "0.24.1"
@@ -18,6 +20,8 @@ log = "0.4"
 
 # You only need serde if you want app persistence:
 serde = { version = "1", features = ["derive"] }
+
+build-info = "0.0.34"
 
 # native:
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
