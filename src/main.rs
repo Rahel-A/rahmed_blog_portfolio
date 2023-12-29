@@ -15,7 +15,7 @@ fn main() -> eframe::Result<()> {
     eframe::run_native(
         "Rahel Ahmed CV",
         native_options,
-        Box::new(|cc| Box::new(rahmed_blog_portfolio::TemplateApp::new(cc))),
+        Box::new(|cc| Box::new(rahmed_blog_portfolio::CvApp::new(cc))),
     )
 }
 
@@ -32,7 +32,7 @@ fn main() {
             .start(
                 "the_canvas_id", // hardcode it
                 web_options,
-                Box::new(|cc| Box::new(rahmed_blog_portfolio::TemplateApp::new(cc))),
+                Box::new(|cc| Box::new(rahmed_blog_portfolio::CvApp::new(cc))),
             )
             .await
             .expect("failed to start eframe");
