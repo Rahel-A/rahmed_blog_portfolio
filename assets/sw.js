@@ -1,4 +1,4 @@
-var cacheName = 'egui-template-pwa';
+var cacheName = 'rahels-assets';
 var filesToCache = [
   './',
   './index.html',
